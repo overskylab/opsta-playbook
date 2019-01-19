@@ -1,5 +1,4 @@
-roles/*
-!roles/.gitkeep
+roles
 group_vars/*/*vault*.yml
 group_vars/*test*
 group_vars/*/*test*

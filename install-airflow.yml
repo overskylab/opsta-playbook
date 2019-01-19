@@ -3,6 +3,5 @@
   gather_facts: yes
   become: true
   roles:
-    - opsta.java
-    - overskylab.kafka
+    - overskylab.airflow
   environment: "{{ proxy_env | default({}) }}"

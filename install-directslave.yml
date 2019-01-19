@@ -1,0 +1,8 @@
+---
+- hosts: all
+  gather_facts: yes
+  become: true
+  roles:
+    - { role: overskylab.bind9, when: directslave_standalone | default(false) }
+    - overskylab.directslave
+  environment: "{{ proxy_env | default({}) }}"
